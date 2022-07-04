@@ -1,5 +1,5 @@
 function redirect() {
 
-    location.replace("/words.html")
+    location.replace("https://rajveer2009.github.io/sis/words.html")
 
 }
