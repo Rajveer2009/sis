@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAPPY FATHERS DAY</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+
+</head>
+
+<body>
+    <h1>HAPPY FATHERS DAY</h1>
+
+    <div id="images" style="text-align: center;">
+        <img
+            src='https://lh3.googleusercontent.com/pw/AM-JKLWSDBm3UwRl_TYSCNcG8Lq5uxLhXpP1BpafERhxrOgdC3pwCnrPfdlyKPQcrrlCZfi2ZvQWOFq8-E1py3TXpTizQO4lOD2J4iRiyP7_ZGFEE_t-bZ57MzcAtZoyVGJpewBL-Kmw1n0gpz0oIb6hKW6j=s640-no?authuser=0'>
+    </div>
+
+    <br> <br>
+
+    <div id="count-down-div" style="text-align: center;">
+        <p id="head-count">TIME UNTIL THE SWEETEST SISTERS BIRTHDAY</p>
+        <p id="demo"></p>
+        <script>
+            var countDownDate = new Date("July 4, 2023  16:01:04").getTime();
+            var x = setInterval(function () {
+                var now = new Date().getTime();
+                var distance = countDownDate - now;
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                document.getElementById("demo").innerHTML = days + " D   " + hours + " H   "
+                    + minutes + " M   " + seconds + " S   ";
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "EXPIRED";
+                }
+            }, 1000);
+        </script>
+    </div>
+
+    <div style="text-align: center;">
+
+        <button onclick="redirect()" id="sur" style="text-align: center;">SURPRISE</button>
+
+    </div>
+
+</body>
+
+</html>

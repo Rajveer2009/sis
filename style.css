@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&family=Roboto+Mono:wght@100&display=swap');
+
+body {
+    color: yellow;
+    background-color: pink;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+    text-align: center;
+    font-size: 64px;
+    ;
+}
+
+#sur {
+    background-color: orange;
+    color: yellow;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#words {
+    size: 28px;
+}
+
+#count-down-div {
+    text-align: center;
+}
+
+#head-count {
+    font-size: 42px;
+    font-weight: 900;
+}
+
+#demo {
+    font-size: 52px;
+    font-weight: 700;
+}
